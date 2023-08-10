@@ -1,6 +1,6 @@
 import Button from '@/components/Button';
 import { baobab } from '@/features/Wallet/chains/testnet/baobab';
-import useMetaMask from '@/hooks/useMetamask';
+import useMetaMask from '@/hooks/useMetaMask';
 import Decimal from 'decimal.js';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
