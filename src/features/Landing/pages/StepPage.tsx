@@ -5,13 +5,14 @@ import ConnectWallet from '../components/ConnectWallet';
 import ChangeAddress from '../components/ChangeAddress';
 import CheckBalance from '../components/CheckBalance';
 import CreateSignatures from '../components/CreateSignatures';
+import MakeContract from '../components/MakeContract';
 
 const STEPS: Record<number, string> = {
   1: 'Connect MetaMask.',
   2: 'Try selecting another account in MetaMask.',
   3: 'Check your balance.',
   4: 'Create a signature with MetaMask.',
-  5: '',
+  5: 'Make a contract with MetaMask.',
 };
 
 const StepPage = () => {
@@ -45,6 +46,7 @@ const StepPage = () => {
       {id === 2 && <ChangeAddress />}
       {id === 3 && <CheckBalance />}
       {id === 4 && <CreateSignatures />}
+      {id === 5 && <MakeContract />}
     </div>
   );
 };
