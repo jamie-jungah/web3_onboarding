@@ -4,12 +4,13 @@ import { useEffect, useState } from 'react';
 import ConnectWallet from '../components/ConnectWallet';
 import ChangeAddress from '../components/ChangeAddress';
 import CheckBalance from '../components/CheckBalance';
+import CreateSignatures from '../components/CreateSignatures';
 
 const STEPS: Record<number, string> = {
   1: 'Connect MetaMask.',
   2: 'Try selecting another account in MetaMask.',
   3: 'Check your balance.',
-  4: '',
+  4: 'Create a signature with MetaMask.',
   5: '',
 };
 
@@ -43,6 +44,7 @@ const StepPage = () => {
       {id === 1 && <ConnectWallet />}
       {id === 2 && <ChangeAddress />}
       {id === 3 && <CheckBalance />}
+      {id === 4 && <CreateSignatures />}
     </div>
   );
 };
